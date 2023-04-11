@@ -3,7 +3,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .card {
     background-color: red;
     background-repeat: no-repeat;
@@ -16,16 +15,20 @@
     margin:10px 15px;
 }
 
+.card:hover .card-text{
+    background-color: lightblue;
+}
+
 .card-text {
     position: absolute;
     bottom: 0;
     background-color: #f1f1f1b8;
+    transition: background-color 0.5s;
     color: black;
     width: 100%;
     text-align: center;
     margin-bottom: 0;
     padding:5px 0;
-
 }
     
 #wholepage {
@@ -50,4 +53,20 @@ footer {
     text-align: center;
     padding: 1vh;
     color:black;
+}
+
+a {
+    transition: color 0.5s !important;
+    
+}
+a:hover {
+    color:lightblue;
+}
+
+.w3-bar-item:hover {
+    background-color: lightblue !important;
+}
+
+.w3-bar-item {
+    transition: background-color 0.5s !important;
 }

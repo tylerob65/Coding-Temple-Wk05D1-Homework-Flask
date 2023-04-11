@@ -3,14 +3,6 @@
 <h1>Favorite 5</h1>
 <h2>Here are my 5 favorite artists...</h2>
 
-<!-- {% for artist in favorite_artists %}
-    <li>{{ artist }}</li>
-{% endfor %}
-
-{% for key in test %}
-<li>{{ key }} and {{test[key]}} </li>
-{% endfor %} -->
-
 <div id="card-holder">
     {% for artist in favorite_artists %}
     <div class="card" style="background-image:url({{ favorite_artists[artist] }});">
@@ -19,29 +11,6 @@
 
     {% endfor %}
 </div>
-
-
-
-<!-- <div id="card-holder">
-    
-    <div class="card" style="background-image:url(https://live-production.wcms.abc-cdn.net.au/20716664ffc92f5dd328ae42abd2bd8c?impolicy=wcms_crop_resize&cropH=562&cropW=1000&xPos=0&yPos=0&width=862&height=485);">
-        <p class="card-text">Glass Animals</p>
-    </div>
-    <div class="card"
-        style="background-image:url(https://media.gq.com/photos/5db86b7fb2ccb20008b49804/4:3/w_4383,h_3287,c_limit/GQ-ROC-8.jpg);">
-        <p class="card-text">Rex Orange County</p>
-    </div>
-    <div class="card"
-        style="background-image:url(https://www.anglotopia.net/wp-content/uploads/2017/06/Queen_band-800x500.jpg);">
-        <p class="card-text">Queen</p>
-    </div>
-    <div class="card"
-        style="background-image:url(https://yt3.googleusercontent.com/5lOkozHE7R-TL0iHNetrVWai47pG7Oa6bJvW4CiUGCMsRUjqXSUAlJWDgpkjdc12iKm0GwzF0Cw=s900-c-k-c0x00ffffff-no-rj);">
-        <p class="card-text">The Beatles</p>
-    </div>
-</div> -->
-
-
 
 {% endblock %}
 
